@@ -1,0 +1,16 @@
+#cover{
+    height: 100vh;
+    background-image: url(images/cover-image.jpg);
+}
+#header-text{
+    margin-top:8%;
+    margin-left: 3%;
+}
+li{
+    margin: 1%;
+    list-style-type: none;
+    text-decoration: none;
+}
+.inserted-text{
+    color: red;
+}

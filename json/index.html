@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <ul id="people"></ul>
+    <script>
+        var people = [
+            {
+                name: 'Adi',
+                age: 27,
+            },
+            {
+                name: 'John',
+                age: 30,
+            },
+            {
+                name: 'Tom',
+                age: 35,
+            },
+        ]
+
+        var output = '';
+        for (var i = 0; i < people.length; i++) {
+            //console.log(people[i]);
+
+            output += '<li>' + people[i].name + '</li>';
+        };
+
+        document.getElementById('people').innerHTML = output;
+    </script>
+</body>
+
+</html>
