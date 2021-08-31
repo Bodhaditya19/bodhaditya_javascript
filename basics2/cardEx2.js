@@ -40,17 +40,18 @@ const values = [
 let group = [];
 let deck =  [];
 
-for(let i = 0; i<cardSuit.length; i++){
-    for(let x = 0; x < values.length; x++){
+for(var i = 0; i<cardSuit.length; i++){
+    for(var  x = 0; x < values.length; x++){
         let card = {
             Value : values[x],
             Suit  : cardSuit[i],
         }
         group.push(card);
-
     }
-    deck.push(group);
-    group = null;
+    if(x == values.length){
+        deck.push(group);
+        console.log("This was the group of "+ cardSuit[i]);
+    }
 
 }
 console.log(deck);

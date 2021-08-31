@@ -13,12 +13,11 @@ let deck = [];
 for(let i = 0; i<cardSuit.length; i++){
     for(let x = 0; x < values.length; x++){
         let card = {
-            Value : values[x],
             Suit  : cardSuit[i],
+            Value : values[x],
         }
         deck.push(card);
-
     }
 
 }
-console.log(deck[0]);
+console.log(deck);
